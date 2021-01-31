@@ -1,25 +1,15 @@
 {% extends 'main/index.html' %}
 
 {% block title %}
-    <h1>{{ title }}</h1>
+    <h1>Yangiliklar sahifasi</h1>
 {% endblock %}
 
 
 {% block content %}
     <div class="features">
-        <h1>{{ title|upper }} </h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam atque enim, ex excepturi id laudantium minus odio quibusdam voluptatibus.</p>
-        <button class="btn btn-warning">Welcome home page</button>
+        <button class="btn btn-warning">Saxifaga tashrif buyurish</button>
 
-        {% for val in values %}
-            <p>{{ val }}</p>
-        {% endfor %}
-
-        {% for val in car %}
-            {{ val }}
-        {% endfor %}
-
-    </div>
 
 
 {% endblock %}

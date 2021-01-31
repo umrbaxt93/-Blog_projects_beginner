@@ -4,7 +4,13 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-    return render(request, 'main/home.html')
+    data = {
+        'title': 'Home page',
+        'values': ['Umid', 'Bahrom', 'Shavkat' ],
+        'car': ['BMW', 'Mersades', 'GM'],
+        'obj': {'name': 'Umid', 'age':22, 'car':'Tesla'}
+    }
+    return render(request, 'main/home.html', data)
 
 
 def about(request):
